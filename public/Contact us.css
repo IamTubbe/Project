@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #002f56;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap; /* ให้เนื้อหาภายในแถวทำการพับไปบรรทัดใหม่ */
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 100px;
+}
+
+main {
+    padding: 140px 60px 40px 60px; /* เพิ่ม padding-top ให้เลี่ยงโดน header ทับ */
+    text-align: left;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin-left: auto; /* ทำให้เนื้อหากลาง */
+    margin-right: auto; /* ทำให้เนื้อหากลาง */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+header .menu {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 60px; /* ขยับไม่ให้ชิดขอบขวา */
+}
+
+header .menu img {
+    height: 30px;           /* กำหนดความสูงของภาพ */
+    width: 30px;            /* กำหนดความกว้างให้เท่ากับความสูงเพื่อให้เป็นวงกลม */
+    margin-left: 10px;      /* เพิ่มช่องว่างระหว่างภาพ */
+    border-radius: 50%;     /* ทำให้ภาพเป็นวงกลม */
+    object-fit: cover;      /* ทำให้ภาพพอดีกับกรอบที่ตั้งไว้ */
+}
+
+header .profile img:first-child {
+    margin-left: 0;         /* ไม่มีช่องว่างก่อนภาพแรก */
+}
+
+header .profile img:last-child {
+    margin-left: 20px;      /* เพิ่มช่องว่างระหว่างภาพ */
+}
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -65px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -20px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: right;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.container {
+    background: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #002f56;
+    text-align: left;
+}
+
+/* สไตล์ของรายการช่าง */
+.technician-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.technician-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.technician-info {
+    display: flex;
+    flex: 1;
+}
+
+.technician-info div {
+    margin-left: 10px;
+}
+
+.technician-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.technician-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #bbb;
+    color: white;
+}
+
+/* เพิ่มการจัดการเมื่อปุ่มหมายเลขหน้าถูกคลิก */
+.pagination button.active {
+    background-color: #888;  /* สีเข้ม (ที่ต้องการ) */
+    color: white;
+}
+
+.back-btn {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 5px;
+}

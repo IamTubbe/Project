@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #002f56;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 100px;
+}
+
+main {
+    padding: 140px 60px 40px 60px; /* เพิ่ม padding-top ให้เลี่ยงโดน header ทับ */
+    text-align: left;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin-left: auto; /* ทำให้เนื้อหากลาง */
+    margin-right: auto; /* ทำให้เนื้อหากลาง */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 90%; /* ดันไปทางขวา */
+}
+
+header .menu img {
+    height: 30px;           
+    width: 30px;            
+    margin-left: 10px;      
+    border-radius: 50%;     
+    object-fit: cover;      
+}
+
+
+header .profile img:first-child {
+    margin-left: 0;         /* ไม่มีช่องว่างก่อนภาพแรก */
+}
+
+header .profile img:last-child {
+    margin-left: 20px;      /* เพิ่มช่องว่างระหว่างภาพ */
+}
+
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -50px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -50px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+    border-radius: 50%;   /* ทำให้โลโก้เป็นวงกลม */
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+/* ปรับปุ่มให้มน */
+.submit-button,
+.back-button {
+    border-radius: 5px; /* ทำให้ปุ่มมน */
+    padding: 12px 20px; /* เพิ่มขนาดปุ่ม */
+    font-size: 16px;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.assessment-box {
+    margin: 20px auto;
+    width: 50%;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.rating {
+    direction: rtl; /* แสดงดาวจากขวาไปซ้าย */
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #002f56;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #002f56;
+}
+
+.back-button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ff7f00;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #ff7f00;
+}
+
+.clickable-icon {
+    cursor: pointer;
+}

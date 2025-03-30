@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Gallery/โลโก้.png" alt="CEM Logo">
+        </div>
+        <div class="profile">
+            <a href="User profile.html ">
+                <img id="userIcon" src="Gallery/ภาพโปรไฟล์.jpg" alt="User Icon" class="clickable-icon">
+            </a>
+            <img src="Gallery/ธงประเทศไทย.webp" alt="ภาษาไทย">
+        </div>
+    </header>
+    
+    <div class="login-container">
+        <h2>เข้าสู่ระบบ</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <input type="email" id="email" placeholder="อีเมล" required>
+            </div>
+            <div class="input-group password-group">
+                <input type="password" id="password" placeholder="รหัสผ่าน" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+            <div class="remember-me-group">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">จำฉันเข้าสู่ระบบ</label>
+            </div>
+            <button type="button" class="login-btn" onclick="login()">
+                เข้าสู่ระบบ
+            </button>
+            
+            
+        </form>
+
+        <div class="divider">หรือเข้าสู่ระบบด้วย</div>
+        
+        <button class="google-btn">
+            <img src="Gallery/images-Photoroom.png" alt="Google"> เข้าสู่ระบบด้วย Google
+        </button>
+        <p class="forgot-password"><a href="#">ลืมรหัสผ่าน?</a></p>
+    </div>
+    
+    <script src="Login.js"></script>
+</body>
+</html>

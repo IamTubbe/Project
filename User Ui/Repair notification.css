@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+header {
+    background-color: #002f56;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* ทำให้มีช่องว่างระหว่างโลโก้และโปรไฟล์ */
+    align-items: center;
+    height: 150px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin-left: 90%; /* ดันไปทางขวา */
+}
+
+.menu img {
+    height: 30px;           
+    width: 30px;            
+    margin-left: 10px;      
+    border-radius: 50%;     
+    object-fit: cover;      
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 100px;
+    margin-left: 20px;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* ช่วยให้โปรไฟล์ไปอยู่ทางขวา */
+}
+
+header .profile img {
+    height: 30px;
+    margin-left: 10px;
+}
+/* ปรับโลโก้ */
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -50px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -50px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+    border-radius: 50%;   /* ทำให้โลโก้เป็นวงกลม */
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo span {
+    font-size: 14px;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li.profile {
+    margin-left: auto;
+}
+
+nav ul li.language {
+    font-size: 18px;
+}
+
+/* สไตล์ของ Main */
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: bold;
+    background-color: #ffcc00;
+    display: inline-block;
+    padding: 50px 50px;
+    border-radius: 50px;
+    width: 1000px; /* ปรับความยาวกรอบให้ยาวขึ้น */
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลาง */
+    border: none; /* ลบเส้นขอบออก */
+    box-shadow: none; /* เอาเงาออก (ถ้ามี) */
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 20px 60px; /* ความกว้างและสูงให้ได้รูปวงรี */
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 30px; /* ทำให้กลายเป็นวงรี */
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.back-btn {
+    display: block;
+    margin-top: 50px;
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+nav {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: right;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+

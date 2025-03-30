@@ -1,0 +1,206 @@
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #fff;
+    padding: 0; 
+    margin: 0;
+}
+
+header {
+    background-color: #002f56;
+    color: white;
+    padding: 10px 20px; /* ขยาย padding ด้านข้าง */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 100px;
+}
+
+main {
+    padding: 140px 60px 40px 60px; /* เพิ่ม padding-top ให้เลี่ยงโดน header ทับ */
+    text-align: left;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin-left: auto; /* ทำให้เนื้อหากลาง */
+    margin-right: auto; /* ทำให้เนื้อหากลาง */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -65px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -20px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+}
+
+
+header .profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 80px; /* ขยับไม่ให้ชิดขอบขวา */
+}
+
+header .profile img {
+    height: 30px;           /* กำหนดความสูงของภาพ */
+    width: 30px;            /* กำหนดความกว้างให้เท่ากับความสูงเพื่อให้เป็นวงกลม */
+    margin-left: 10px;      /* เพิ่มช่องว่างระหว่างภาพ */
+    border-radius: 50%;     /* ทำให้ภาพเป็นวงกลม */
+    object-fit: cover;      /* ทำให้ภาพพอดีกับกรอบที่ตั้งไว้ */
+}
+
+header .profile img:first-child {
+    margin-left: 0;         /* ไม่มีช่องว่างก่อนภาพแรก */
+}
+
+header .profile img:last-child {
+    margin-left: 20px;      /* เพิ่มช่องว่างระหว่างภาพ */
+}
+
+
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: orange;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-user, .flag-thai {
+    width: 30Spx;
+    height: 40px;
+    background-size: cover;
+}
+
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* กรอบรวมชื่อและตำแหน่ง */
+.combined-box {
+    background-color: #dcdcdc;
+    border-radius: 12px;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.name-text {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.position-label {
+    font-size: 14px;
+    color: gray;
+}
+
+.position-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* ขนาดคอลัมน์ให้พอเหมาะ */
+    gap: 50px; /* ลดระยะห่างระหว่างคอลัมน์ */
+    margin-bottom: 30px;
+    background: #dcdcdc;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    max-width: 900px; /* จำกัดความกว้างของกรอบ */
+}
+
+.info-grid div {
+    background: #dcdcdc;
+    padding: 3px; /* ลด padding เพื่อให้ข้อมูลไม่ห่างกันเกินไป */
+    border-radius: 8px;
+    font-size: 20px; /* ลดขนาดฟอนต์ให้เหมาะสม */
+    text-align: left;
+}
+
+.info-grid div strong {
+    font-size: 21px; /* เพิ่มขนาดฟอนต์ของ label */
+}
+
+
+button {
+    background-color: darkorange;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+.profile-container {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 0px;
+}
+
+.card {
+    background-color: #dcdcdc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f3a62;
+}
+
+.label {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.position {
+    font-size: 18px;
+    color: #0f3a62;
+    font-weight: bold;
+}

@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #002f56;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 90px;
+}
+
+main {
+    padding: 140px 60px 40px 60px; /* เพิ่ม padding-top ให้เลี่ยงโดน header ทับ */
+    text-align: left;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin-left: auto; /* ทำให้เนื้อหากลาง */
+    margin-right: auto; /* ทำให้เนื้อหากลาง */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+header  {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 60px; /* ขยับไม่ให้ชิดขอบขวา */
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    margin-left: 90%; /* ดันไปทางขวา */
+}
+
+header .menu img {
+    height: 30px;           
+    width: 30px;            
+    margin-left: 10px;      
+    border-radius: 50%;     
+    object-fit: cover;      
+}
+
+
+header .profile img:first-child {
+    margin-left: 0;         /* ไม่มีช่องว่างก่อนภาพแรก */
+}
+
+header .profile img:last-child {
+    margin-left: 20px;      /* เพิ่มช่องว่างระหว่างภาพ */
+}
+
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -65px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -20px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 14px;
+}
+
+.menu img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    margin: auto;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+.file-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background-color: darkorange;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 70;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 10px;
+}

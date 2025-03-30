@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มแจ้งซ่อม</title>
+    <link rel="stylesheet" href="From Technician.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="User profile.html ">
+                <img id="userIcon" src="Gallery/ภาพโปรไฟล์.jpg" alt="User Icon" class="clickable-icon">
+            </a>
+            <img src="Gallery/ธงประเทศไทย.webp" alt="ภาษาไทย">
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="logo">
+            <img src="Gallery/โลโก้.png" alt="CEM Logo">
+        </div>
+        <h2>รายละเอียดการซ่อม</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="form-grid">
+                <div class="left-column">
+                    <label for="reporter">ชื่อผู้แจ้ง</label>
+                    <input type="text" id="reporter" name="reporter" required>
+                    
+                    <label for="date">วันที่แจ้ง</label>
+                    <input type="date" id="date" name="date">
+                    
+                    <label for="details">รายละเอียด</label>
+                    <textarea id="details" name="details"></textarea>
+                </div>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="note">&#9881; หมายเหตุเพิ่มเติม</label>
+                    <input type="text" id="note" name="note">
+                    <label for="device_image">&#128247; ภาพอุปกรณ์</label>
+                    <input type="file" id="device_image" name="device_image">
+                    <button type="button" id="viewImage">ดูรูปภาพ</button>
+                </div>
+                <button type="submit" class="submit">บันทึกข้อมูล</button>
+            </form>
+        </div>
+        <script src="From Technician.js"></script>
+    </body>
+    </html>

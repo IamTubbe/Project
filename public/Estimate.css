@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #002f56;
+    color: white;
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 90px;
+}
+
+main {
+    padding: 140px 60px 40px 60px; /* เพิ่ม padding-top ให้เลี่ยงโดน header ทับ */
+    text-align: left;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin-left: auto; /* ทำให้เนื้อหากลาง */
+    margin-right: auto; /* ทำให้เนื้อหากลาง */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 20px; /* ขยับไม่ให้ชิดขอบขวา */
+}
+ .nav img {
+    height: 30px;           /* กำหนดความสูงของภาพ */
+    width: 30px;            /* กำหนดความกว้างให้เท่ากับความสูงเพื่อให้เป็นวงกลม */
+    margin-left: 10px;      /* เพิ่มช่องว่างระหว่างภาพ */
+    border-radius: 50%;     /* ทำให้ภาพเป็นวงกลม */
+    object-fit: cover;      /* ทำให้ภาพพอดีกับกรอบที่ตั้งไว้ */
+}
+
+header .profile img:first-child {
+    margin-left: 0;         /* ไม่มีช่องว่างก่อนภาพแรก */
+}
+
+header .profile img:last-child {
+    margin-left: 20px;      /* เพิ่มช่องว่างระหว่างภาพ */
+}
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -65px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -20px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav img {
+    width: 30px;  /* กำหนดความกว้าง */
+    height: 30px; /* กำหนดความสูง */
+}
+
+.logo span {
+    font-size: 16px;
+
+}
+
+.nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #002f56;
+    color: white;
+}
+
+.evaluate-btn {
+    background-color: #ff7f00;
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #ddd;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #bbb;
+    color: white;
+}
+
+.back-btn {
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 5px;
+}

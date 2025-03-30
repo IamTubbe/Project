@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #002f56;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* ทำให้มีช่องว่างระหว่างโลโก้และโปรไฟล์ */
+    align-items: center;
+    padding: 15px 20px;
+    flex-wrap: wrap; /* ให้เนื้อหาภายในแถวทำการพับไปบรรทัดใหม่ */
+    height: 100px;
+}
+
+main {
+    padding: 140px 60px 40px 60px; /* เพิ่ม padding-top ให้เลี่ยงโดน header ทับ */
+    text-align: left;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin-left: auto; /* ทำให้เนื้อหากลาง */
+    margin-right: auto; /* ทำให้เนื้อหากลาง */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+header .profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: px; /* ขยับไม่ให้ชิดขอบขวา */
+}
+
+header .profile img {
+    height: 30px;           /* กำหนดความสูงของภาพ */
+    width: 30px;            /* กำหนดความกว้างให้เท่ากับความสูงเพื่อให้เป็นวงกลม */
+    margin-left: 10px;      /* เพิ่มช่องว่างระหว่างภาพ */
+    border-radius: 50%;     /* ทำให้ภาพเป็นวงกลม */
+    object-fit: cover;      /* ทำให้ภาพพอดีกับกรอบที่ตั้งไว้ */
+}
+
+header .profile img:first-child {
+    margin-left: 0;         /* ไม่มีช่องว่างก่อนภาพแรก */
+}
+
+header .profile img:last-child {
+    margin-left: 20px;      /* เพิ่มช่องว่างระหว่างภาพ */
+}
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -65px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -20px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* ช่วยให้โปรไฟล์ไปอยู่ทางขวา */
+}
+
+header .profile img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+.logo span {
+    font-size: 16px;
+}
+
+.login-container {
+    background: white;
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #EB8317;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.google-btn {
+    width: 100%;
+    background-color: #1D6BB5;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.google-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+.remember-me-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-me-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto; /* ปรับความกว้างให้เป็นอัตโนมัติ */
+    cursor: pointer;
+}
+
+.remember-me-group label {
+    font-size: 14px;
+    color: #555;
+    cursor: pointer;
+}

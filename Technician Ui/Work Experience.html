@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>งานที่ได้รับหมอบหมาย</title>
+    <link rel="stylesheet" href="Work Experience.css">
+</head>
+<body>
+    <div class="header">
+        <div class="menu">
+            <a href="Technician Profile.html">
+                <img id="userIcon" src="Gallery/ภาพโปรไฟล์.jpg" alt="User Icon" class="clickable-icon">
+            </a>
+            <img src="Gallery/ธงประเทศไทย.webp" alt="ภาษาไทย">
+        </div>
+    </div>
+    
+    <div class="logo">
+        <img src="Gallery/โลโก้.png" alt="CEM Logo">
+    </div>
+    
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>วันที่แจ้งซ่อม</th>
+                    <th>รายละเอียด</th>
+                    <th>สถานะ</th>
+                </tr>
+            </thead>
+            <tbody id="repairTable">
+                <!-- รายการจะแสดงที่นี่โดย JS -->
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button onclick="prevPage()">❮</button>
+            <div id="page-numbers"></div>
+            <button onclick="nextPage()">❯</button>
+        </div>
+
+        <button onclick="location.href='index Technician.html'">กลับหน้าหลัก</button>
+    </div>
+
+    <!-- <script src="Repair list.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประเมินการซ่อม</title>
+    <link rel="stylesheet" href="Estimate.css">
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a href="User profile.html ">
+                <img id="userIcon" src="Gallery/ภาพโปรไฟล์.jpg" alt="User Icon" class="clickable-icon">
+            </a>
+            <img src="Gallery/ธงประเทศไทย.webp" alt="ภาษาไทย">
+        </div>
+    </div>
+</header>
+    <div class="logo">
+        <img src="Gallery/โลโก้.png" alt="CEM Logo">
+    </div>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>วันที่แจ้งซ่อม</th>
+                    <th>รายละเอียด</th>
+                    <th>ประเมิน</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- แถวข้อมูลจะถูกเพิ่มที่นี่ผ่าน JavaScript -->
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button onclick="prevPage()">❮</button>
+            <div id="page-numbers"></div>
+            <button onclick="nextPage()">❯</button>
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='Home pape.html';">กลับหน้าหลัก</button>
+
+    </div>
+
+    <script src="Estimate.js"></script>
+</body>
+</html>

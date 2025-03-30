@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #002f56;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 100px;
+}
+
+main {
+    padding: 140px 60px 40px 60px; /* เพิ่ม padding-top ให้เลี่ยงโดน header ทับ */
+    text-align: left;
+    max-width: 1200px; /* กำหนดความกว้างสูงสุดของเนื้อหา */
+    margin-left: auto; /* ทำให้เนื้อหากลาง */
+    margin-right: auto; /* ทำให้เนื้อหากลาง */
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+
+header  {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 60px; /* ขยับไม่ให้ชิดขอบขวา */
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    margin-left: 90%; /* ดันไปทางขวา */
+}
+
+header .menu img {
+    height: 30px;           
+    width: 30px;            
+    margin-left: 10px;      
+    border-radius: 50%;     
+    object-fit: cover;      
+}
+
+
+header .profile img:first-child {
+    margin-left: 0;         /* ไม่มีช่องว่างก่อนภาพแรก */
+}
+
+header .profile img:last-child {
+    margin-left: 20px;      /* เพิ่มช่องว่างระหว่างภาพ */
+}
+
+.logo img {
+    height: 250px;
+    width: 250px;
+    position: absolute;  /* ใช้ position absolute เพื่อให้โลโก้แยกจาก flow ของ header */
+    top: -65px;           /* ย้ายโลโก้ขึ้นหรือลงจากตำแหน่งตามแกน Y */
+    left: -20px;          /* ย้ายโลโก้ไปทางซ้ายจากตำแหน่งตามแกน X */
+    z-index: 1001;       /* ให้โลโก้แสดงอยู่เหนือส่วนอื่นๆ */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 14px;
+}
+
+.menu img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.container {
+    background: white;
+    width: 60%;
+    margin: 20px auto;
+    padding: 30px; /* เพิ่มช่องไฟระหว่างขอบ */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #002f56;
+    margin-bottom: 30px; /* เพิ่มช่องไฟระหว่างหัวข้อ */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* จัดแบ่งแบบฟอร์มเป็น 2 ฝั่ง */
+.form-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* เพิ่มช่องไฟระหว่างคอลัมน์ */
+    margin-bottom: 30px; /* เพิ่มช่องไฟระหว่างส่วนของฟอร์ม */
+}
+
+.left-column, .right-column {
+    width: 47%; /* ลดขนาดเหลือ 48% เพื่อเพิ่มช่องไฟ */
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px; /* เพิ่ม padding เพื่อให้ช่องกว้างขึ้น */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    height: 90px; /* เพิ่มความสูงของ textarea */
+    width: 90%;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+    width: 90%; /* กำหนดความกว้างที่แตกต่างสำหรับ input แบบต่างๆ */
+}
+select {
+    width: 95%; /* กำหนดความกว้างสำหรับ select */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* เพิ่มช่องไฟระหว่างปุ่ม */
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 48%;
+}
+
+.back {
+    background-color: #ff6600;
+    color: white;
+}
+
+.submit {
+    background-color: #002f56;
+    color: white;
+}
+
+input[type="file"] {
+    width: 90%; /* ทำให้กว้างเต็มที่ */
+}
